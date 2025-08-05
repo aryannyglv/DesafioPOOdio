@@ -1,12 +1,14 @@
-public class Curso{
+import java.time.LocalDate;
+
+public class Mentoria {
     private String titulo;
     private String descricao;
-    private int cargahoraria;
+    private LocalDate data;
 
-    public Curso(String titulo, String descricao, int cargahoraria){
+    public Mentoria(String titulo, String descricao, LocalDate data){
         this.titulo = titulo;
         this.descricao = descricao;
-        this.cargahoraria = cargahoraria;
+        this.data = data;
     }
 
     public String getTitulo() {
@@ -25,20 +27,20 @@ public class Curso{
         this.descricao = descricao;
     }
 
-    public int getCargahoraria() {
-        return cargahoraria;
+    public LocalDate getData() {
+        return data;
     }
 
-    public void setCargahoraria(int cargahoraria) {
-        this.cargahoraria = cargahoraria;
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 
     @Override
     public String toString() {
-        return "Curso{" +
+        return "Mentoria{" +
                 "titulo='" + titulo + '\'' +
                 ", descricao='" + descricao + '\'' +
-                ", cargahoraria=" + cargahoraria +
+                ", data=" + data +
                 '}';
     }
 }
